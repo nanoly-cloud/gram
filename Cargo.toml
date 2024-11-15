@@ -1,0 +1,28 @@
+[package]
+name = "gram"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["George Phillips"]
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[package.metadata.component]
+package = "nanoly:gram"
+# This tells cargo-component to use a special adapter, which doesn't depend on
+# `get-environment` or other things not present in the proxy world.
+# proxy = true
+
+[package.metadata.component.target.dependencies]
+"wasi:http" = { path = "wit/deps/http" }
+"wasi:clocks" = { path = "wit/deps/clocks" }
+"wasi:io" = { path = "wit/deps/io" }
+"wasi:random" = { path = "wit/deps/random" }
+"wasi:cli" = { path = "wit/deps/cli" }
+"wasi:filesystem" = { path = "wit/deps/filesystem" }
+"wasi:sockets" = { path = "wit/deps/sockets" }
+
+[dependencies]
+wit-bindgen-rt ={ version= "0.35.0", features = ["bitflags"] }
