@@ -5,17 +5,19 @@
 # I want to explore the concept of self-contained web servers, think github.com repo urls, as modules, but everything equally contains that ability, a super minimal, self providing module.
 #   - Versioned
 #   - Content addressed
-#   - self defining
+#   - Self defined
 #
 # Universal modules.
-#   - Interoperability, via wit IDL, for most major language, with any language being able to create the bindings
-#   - Execution, through wasm, with many major languages being able to compile to wasm
-#   - Standardisation: The lack of code, means the aim is to just connect to simple standards, it HTTP and eventually POSIX
+#   - Interoperability, through wit IDL, for most major language, with any language being able to create the bindings
+#   - Execution, through wasm, with many major languages being able to compile to wasm. Even browsers.
+#   - Standardised: The lack of code, is by design, hopefully sticking with HTTP and eventually POSIX standard requests/responses.
 #   - Next: Distribution, through a content addressed system
 #
 # From there, I'm hoping to see if I can build into a hash based content addressed distributed system.
 
 # This is the module entrypoint
+
+# TODO: Add the cargo and wasmtime checks/installs
 
 cargo component build --quiet
 

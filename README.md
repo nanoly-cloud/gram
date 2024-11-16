@@ -1,4 +1,6 @@
 # gram - README.md
 
-see [gram](./gram) for more
+Actually, I've decided README.md is great.
 
+
+This is an example of a self hosted, modules, with universal execution capabilities
