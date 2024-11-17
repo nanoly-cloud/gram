@@ -2,8 +2,8 @@
 name = "gram"
 version = "0.1.0"
 edition = "2021"
-license = "MIT"
-authors = ["George Phillips"]
+license = "AGPL-3.0-or-later"
+authors = ["nanoly"]
 publish = false
 
 [lib]
