@@ -11,9 +11,6 @@ crate-type = ["cdylib"]
 
 [package.metadata.component]
 package = "nanoly:gram"
-# This tells cargo-component to use a special adapter, which doesn't depend on
-# `get-environment` or other things not present in the proxy world.
-# proxy = true
 
 [package.metadata.component.target.dependencies]
 "wasi:http" = { path = "wit/deps/http" }

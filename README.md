@@ -12,13 +12,16 @@ In short I want to a build super simple universal executable environment, commun
 
 Universal modules.
 - Interoperability (Wit IDL), for most major language, with any language being able to create bindings
-- Execution, through wasm, with many major languages being able to compile to wasm. Runs in browsers.
-- Standardised: Map HTTP, to POSIX.
-- Component Model: Wasi's component model, maps well to the directory design of a POSIX filesystem.
+- Execution: WASM, with many major languages being able to compile to wasm. Runs in browsers.
+- Standardised: Map HTTP to POSIX.
+- Componentised: Wasi's component model, maps well to the directory system designs, and component systems of nester now.
+    For one, both are hierarchical, and trepresentable.
+    For two, both are compostable.
+    For three, they have the same versioning requirements.
 
 Next:
 - [ ] Implement process networking
 - [ ] Implement users
 - [ ] Implement datastore
-- [ ] Implement confidence scores
+- [ ] Implement confidence, decaying data lifetimes
 
